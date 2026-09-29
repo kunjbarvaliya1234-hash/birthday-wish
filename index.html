@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday clumsyyy......❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                135deg,
+                #ff758c,
+                #ff7eb3,
+                #a18cd1
+            );
+            overflow-x: hidden;
+            color: white;
+            padding: 20px;
+        }
+        /* Main Card */
+        .card {
+            width: 100%;
+            max-width: 520px;
+            padding: 35px 25px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+            z-index: 2;
+            animation: appear 1.5s ease;
+        }
+        /* Card Animation */
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        /* Cake */
+        .cake {
+            font-size: 65px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+        /* Heading */
+        h1 {
+            font-size: 40px;
+            margin: 12px 0;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.25);
+        }
+        h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-top: 10px;
+        }
+        /* ------------------------- */
+        /* PHOTO GALLERY */
+        /* ------------------------- */
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 25px 0;
+        }
+        .photo-gallery img {
+            width: 135px;
+            height: 165px;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 3px solid white;
+            box-shadow:
+                0 8px 20px rgba(0,0,0,0.3);
+            transition: 0.4s;
+            animation: photoAppear 1s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.08) rotate(2deg);
+        }
+        @keyframes photoAppear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Button */
+        button {
+            margin-top: 25px;
+            padding: 13px 28px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #ff4f81;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            transform: scale(1.08);
+            box-shadow:
+                0 8px 20px rgba(0,0,0,0.25);
+        }
+        /* Surprise Message */
+        #surprise {
+            display: none;
+            margin-top: 25px;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* ------------------------- */
+        /* FLOATING HEARTS */
+        /* ------------------------- */
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            font-size: 25px;
+            animation: float 7s linear infinite;
+            opacity: 0.8;
+            z-index: 1;
+        }
+        @keyframes float {
+            0% {
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            100% {
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+                opacity: 0;
+            }
+        }
+        /* Mobile */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 34px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            .photo-gallery img {
+                width: 105px;
+                height: 135px;
+            }
+            .card {
+                padding: 30px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Hearts -->
+    <div class="heart" style="left:5%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:18%; animation-delay:2s;">💕</div>
+    <div class="heart" style="left:35%; animation-delay:4s;">💖</div>
+    <div class="heart" style="left:55%; animation-delay:1s;">💗</div>
+    <div class="heart" style="left:72%; animation-delay:3s;">❤️</div>
+    <div class="heart" style="left:90%; animation-delay:5s;">💞</div>
+    <!-- Main Card -->
+    <div class="card">
+        <!-- Birthday Cake -->
+        <div class="cake">
+            🎂
+        </div>
+        <!-- Main Heading -->
+        <h1>
+            Happy Birthday! 🎉
+        </h1>
+        <!-- Change the name -->
+        <h2>
+            To My Special Person ❤️
+        </h2>
+        <!-- PHOTO SECTION -->
+        <div class="photo-gallery">
+            <!-- Change these filenames to your photos -->
+            <img
+                src="heer.jpeg"
+                alt="Her photo"
+            >
+            <img
+                src="heer2.jpeg"
+                alt="Her photo"
+            >
+            <img
+                src="heer3.jpeg"
+                alt="Her photo"
+            >
+        </div>
+        <!-- Birthday Message -->
+        <p>
+            Today is a very special day because
+            someone truly special came into this world. 💕
+        </p>
+        <p>
+            May your birthday be filled with happiness,
+            beautiful memories, endless smiles,
+            and everything your heart wishes for. ✨
+        </p>
+        <!-- Surprise Button -->
+        <button onclick="showSurprise()">
+            💌 Open Your Surprise
+        </button>
+        <!-- Hidden Surprise -->
+        <div id="surprise">
+            <h2>
+                ❤️ You Are Special ❤️
+            </h2>
+            <p>
+                No matter where life takes us,
+                I hope you always remember
+                how special you are to me. 🌹
+            </p>
+            <p>
+                Keep smiling, keep shining,
+                and have the most beautiful birthday ever! ✨
+            </p>
+            <p>
+                Happy Birthday once again! 🎂❤️
+            </p>
+        </div>
+    </div>
+    <!-- JavaScript -->
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").style.display = "block";
+        }
+    </script>
+</body>
+</html>
